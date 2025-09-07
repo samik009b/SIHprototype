@@ -36,6 +36,7 @@ body {
 
 .navbar ul li a:hover {
   color: #d97b29;
+  text-decoration: underline;
 }
 /* ✅ Search Bar */
 .search-bar {
@@ -43,8 +44,9 @@ body {
   width: 220px;
   display: flex;
   align-items: center;
-  background: #fff;
-  padding: 4px 10px;
+  background: #ffffff;
+  padding: 6px;
+  margin: 12px;
   border-radius: 20px;
 }
 
@@ -193,6 +195,13 @@ body {
   cursor: pointer;
 }
 
+.first-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* cards */
 .cards-section {
   margin: 4rem auto;
@@ -223,7 +232,8 @@ body {
   margin-bottom: 1rem;
 }
 
-.card:hover {
+.card:hover,
+.rental-card:hover {
   transform: translateY(-8px);
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25);
 }
@@ -245,7 +255,8 @@ body {
   text-align: center;
 }
 
-.rental-section h2 {
+.rental-section h2,
+.first-section h2 {
   font-size: 2rem;
   color: #2f5233;
   margin-bottom: 10px;
@@ -270,6 +281,7 @@ body {
   padding: 1rem;
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .rental-card img {
@@ -314,6 +326,10 @@ footer {
   text-align: center;
   color: #fff;
   font-size: 0.95rem;
+}
+
+footer p {
+  padding: 4px;
 }
 
 /* Dark mode styles */

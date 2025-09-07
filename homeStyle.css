@@ -11,6 +11,11 @@ body {
   overflow-x: hidden;
 }
 
+.logo {
+  height: 50px;
+  margin: 0;
+}
+
 /* navbar */
 .navbar {
   display: flex;
